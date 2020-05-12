@@ -3,7 +3,7 @@ function caeser($shift, $string)
 {
     $chars = str_split("abcdefghijklmnopqrstuvwxyz");
     $ciphered_string = "";
-    foreach( str_split($string) as $chr) {
+    foreach( str_split($string) as $chr ) {
         if (in_array($chr, $chars)) {
             $pos = array_search($chr, $chars) + $shift;
             if ($pos > sizeof($chars) - 1) {
